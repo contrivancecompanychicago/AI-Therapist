@@ -1,0 +1,17 @@
+{
+    "id": "644538d3829504104f290a4e",
+    "name": "putTRANCEHealth",
+    "type": "SCHEDULED",
+    "config": {
+        "schedule": "0 */2 * * *",
+        "skip_catchup_events": false
+    },
+    "disabled": false,
+    "event_processors": {
+        "FUNCTION": {
+            "config": {
+                "function_name": "getTRANCEHealth"
+            }
+        }
+    }
+}
